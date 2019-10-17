@@ -13,7 +13,6 @@ void printStudent(struct Student person){
 }
 
 struct Student makeStudent(){
-  srand(time(0));
   struct Student newStudent;
   strcpy(newStudent.name, names[rand() % 4]);
   newStudent.grade = rand() % 101;
